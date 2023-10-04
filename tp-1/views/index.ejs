@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<%- include('includes/head') %>
+<body>
+    <%- include('includes/header') %>
+    <%- include('includes/logs') %>
+    <main>
+        <% if (user) { %>
+            <h1>Bienvenue <%= user.login %></h1>
+        <% } else { %>
+            <h1>Vous devez vous connecter</h1>
+        <% } %>
+    </main>
+</body>
+</html>

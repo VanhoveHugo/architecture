@@ -1,0 +1,7 @@
+<div class="error-container">
+    <% try { %>
+        <% logs.forEach(e => { %>
+            <div class="alert alert-info"><%= e %></div>
+        <% }) %>
+    <% } catch { } %>
+</div>
